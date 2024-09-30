@@ -30,7 +30,7 @@ class ScriptArguments:
 parser = HfArgumentParser(ScriptArguments)
 script_args = parser.parse_args_into_dataclasses()[0]
 
-# Create the model and data folder
+# Create the data folder
 os.makedirs(script_args.data_folder, exist_ok=True)
 
 tqdm.pandas()
